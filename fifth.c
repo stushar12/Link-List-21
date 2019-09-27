@@ -40,9 +40,9 @@ return q;
 struct node *merge(struct node *p,struct node *q)
 {
     struct node *temp,*start,*r,*t,*s;
-    if(p==NULL)
+    if(p==NULL)       //if only one element is there in the p list  which is smaller than q's first element
     return q;
-    if(q==NULL)
+    if(q==NULL)       //if only one element is there in the q list  which is smaller than p's first element
     return p;
   if(p->data<=q->data)
   {
